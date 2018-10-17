@@ -1,0 +1,322 @@
+/*header*/
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.containerheader {
+	width: 100%;
+	overflow: hidden;
+	font-family: 'Playfair Display', serif;
+	padding: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: linear-gradient(#6d4e4e, #886c6c);
+	color: #d90c0c;
+	padding: 10px;
+	min-height: 50px;
+	margin: 25px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+header a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+	font-weight: bold;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1 {
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #E9B64A;
+	font-weight: bold;
+}
+
+/*slider*/
+
+#sliderContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.images {
+	flex: 0 0 80%;
+	min-height: 50vh;
+	background: url('../img/bcg-0.jpg') center/cover no-repeat;
+	display: block;
+	border-radius: 15px;
+	position: relative;
+}
+
+.btn {
+	display: inline-block;
+	background: white;
+	color: black;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	border-radius: 20%;
+	outline: none;
+}
+
+.prevBtn {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+
+.nextBtn {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(50%, -50%);
+}
+
+.btn:active {
+	background: grey;
+	box-shadow: 1px 1px grey;
+}
+
+.btn:hover {
+	background: linear-gradient(#6d4e4e, #886c6c);
+	color: aliceblue;
+}
+
+/* About*/
+
+.about {
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 1.9em;
+	max-height: 100%;
+	max-width: 100%;
+	border-bottom: #d00010 3px solid;
+	margin: 25px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.section {
+	border-bottom: #d00010 3px solid;
+	width: 110px;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+
+.all {
+	display: flex;
+}
+
+.all p {
+	text-align: justify;
+	padding: 35px;
+}
+
+.all1 img {
+	border-radius: 50%;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+	width: 300px;
+	height: 250px;
+}
+
+.aboutslider img {
+	width: 10%;
+	margin-bottom: 60px;
+	border-radius: 10%;
+}
+
+/*Card*/
+
+.Card {
+	border-bottom: #d00010 3px solid;
+	margin: 25px;
+	padding-bottom: 50px;
+
+}
+
+.cardColection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.containercard {
+	padding: 10px;
+}
+
+.card1 {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-height: 300px;
+	max-width: 260px;
+	margin: 20px 0 20px 10px;
+	border-radius: 20px;
+}
+
+.card1:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.card1 img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+/*CONTACT*/
+
+.contactcontainer {
+	margin: 25px;
+	border-bottom: #d00010 3px solid;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.Contactform {
+	border-radius: 5px;
+	padding: 20px;
+	width: 100%;
+}
+
+.Contactpic img {
+	width: 100%;
+	border-radius: 30px;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #d00010;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #e06262;
+}
+
+/*SOCIAL MEDIA*/
+
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 25px;
+	padding: 25px;
+}
+
+.social img:hover {
+	opacity: 0.2;
+}
+
+/*FOOTER*/
+
+.foo {
+	text-align: center;
+	letter-spacing: 5px;
+	margin: 25px;
+}
+
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+/*MEDIA*/
+
+@media(max-width: 768px) {
+	header #branding,
+	header nav,
+	nav ul li,
+	header nav li a,
+	.all,
+	.all1,
+	.section h2,
+	.containerheader,
+	.wrapper,
+	.foo {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		font-size: 10px;
+		margin-bottom: 5px;
+	}
+	header nav li a {
+		font-size: 20px;
+		text-align: center;
+	}
+	.all1 img {
+		width: 200px;
+		height: 200px;
+		margin: auto;
+		margin-bottom: 25px;
+	}
+	.card1 {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		max-height: 130px;
+		max-width: 126px;
+		margin: 20px 0 20px 30px;
+		border-radius: 20px;
+		font-size: 6px;
+	}
+	.card1 img {
+		width: 100%;
+		border-radius: 20px;
+	}
+	.btn {
+		font-size: 0.8rem;
+	}
+}
