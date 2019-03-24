@@ -1,3 +1,3 @@
 # SweetCake Demo:
 
-https://masterkors.github.io/SweetCake/.
+RUN DEMO: https://usernamekors.github.io/SweetCake/
